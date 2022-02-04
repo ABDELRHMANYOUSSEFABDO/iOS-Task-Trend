@@ -74,6 +74,11 @@ class TabBarController: UITabBarController{
     }
     
     private func setupTabBarStyle(){
+        self.tabBar.tintColor = DesignSystem.Colors.darkPrimary.color
+        self.tabBar.unselectedItemTintColor = DesignSystem.Colors.primary.color.withAlphaComponent(0.6)
+        self.tabBar.isTranslucent = false
+        self.tabBar.barTintColor = DesignSystem.Colors.lightPrimary.color
+        UITabBar.appearance().barTintColor = DesignSystem.Colors.lightPrimary.color        
         self.tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         self.tabBar.layer.cornerRadius = 15
         self.tabBar.layer.masksToBounds = true

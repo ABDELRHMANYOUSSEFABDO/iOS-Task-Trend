@@ -25,6 +25,9 @@
 		18AD565827ADA4C100BEDF7A /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AD565627ADA4C100BEDF7A /* SearchVC.xib */; };
 		18AD565C27ADA4FE00BEDF7A /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD565A27ADA4FE00BEDF7A /* FavouriteVC.swift */; };
 		18AD565D27ADA4FE00BEDF7A /* FavouriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AD565B27ADA4FE00BEDF7A /* FavouriteVC.xib */; };
+		18AD566427ADAD4D00BEDF7A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AD566127ADAD4D00BEDF7A /* Colors.xcassets */; };
+		18AD566527ADAD4D00BEDF7A /* ColorSystem.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AD566227ADAD4D00BEDF7A /* ColorSystem.png */; };
+		18AD566627ADAD4D00BEDF7A /* ColorsSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD566327ADAD4D00BEDF7A /* ColorsSystem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		18AD565627ADA4C100BEDF7A /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
 		18AD565A27ADA4FE00BEDF7A /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
 		18AD565B27ADA4FE00BEDF7A /* FavouriteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteVC.xib; sourceTree = "<group>"; };
+		18AD566127ADAD4D00BEDF7A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		18AD566227ADAD4D00BEDF7A /* ColorSystem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorSystem.png; sourceTree = "<group>"; };
+		18AD566327ADAD4D00BEDF7A /* ColorsSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsSystem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 		183A27AF27AD96AB00632869 /* Utilties */ = {
 			isa = PBXGroup;
 			children = (
+				18AD565F27ADAD2900BEDF7A /* DesginSystem */,
 				18AD563D27AD9DCA00BEDF7A /* Coordinator */,
 				183A27B027AD96C100632869 /* Constant.swift */,
 				183A27B327AD977200632869 /* DesignSystem.swift */,
@@ -231,6 +238,24 @@
 			path = MainNavigator;
 			sourceTree = "<group>";
 		};
+		18AD565F27ADAD2900BEDF7A /* DesginSystem */ = {
+			isa = PBXGroup;
+			children = (
+				18AD566027ADAD4D00BEDF7A /* ColorSystem */,
+			);
+			path = DesginSystem;
+			sourceTree = "<group>";
+		};
+		18AD566027ADAD4D00BEDF7A /* ColorSystem */ = {
+			isa = PBXGroup;
+			children = (
+				18AD566127ADAD4D00BEDF7A /* Colors.xcassets */,
+				18AD566227ADAD4D00BEDF7A /* ColorSystem.png */,
+				18AD566327ADAD4D00BEDF7A /* ColorsSystem.swift */,
+			);
+			path = ColorSystem;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -291,8 +316,10 @@
 				18AD565827ADA4C100BEDF7A /* SearchVC.xib in Resources */,
 				183A27A127AD957700632869 /* LaunchScreen.storyboard in Resources */,
 				18AD564C27ADA48100BEDF7A /* HomeVC.xib in Resources */,
+				18AD566427ADAD4D00BEDF7A /* Colors.xcassets in Resources */,
 				183A279E27AD957700632869 /* Assets.xcassets in Resources */,
 				18AD565D27ADA4FE00BEDF7A /* FavouriteVC.xib in Resources */,
+				18AD566527ADAD4D00BEDF7A /* ColorSystem.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +340,7 @@
 				18AD563F27AD9E1000BEDF7A /* AppCoordinator.swift in Sources */,
 				18AD563A27AD9D7000BEDF7A /* TabBarController.swift in Sources */,
 				18AD565C27ADA4FE00BEDF7A /* FavouriteVC.swift in Sources */,
+				18AD566627ADAD4D00BEDF7A /* ColorsSystem.swift in Sources */,
 				183A27BD27AD97D600632869 /* NetworkClient.swift in Sources */,
 				18AD564B27ADA48100BEDF7A /* HomeVC.swift in Sources */,
 				183A27C127AD985C00632869 /* ApiRouter.swift in Sources */,
