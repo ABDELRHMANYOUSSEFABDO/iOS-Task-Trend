@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		183A279527AD957600632869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A279427AD957600632869 /* AppDelegate.swift */; };
 		183A279727AD957600632869 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A279627AD957600632869 /* SceneDelegate.swift */; };
-		183A279927AD957600632869 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A279827AD957600632869 /* ViewController.swift */; };
-		183A279C27AD957600632869 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183A279A27AD957600632869 /* Main.storyboard */; };
 		183A279E27AD957700632869 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183A279D27AD957700632869 /* Assets.xcassets */; };
 		183A27A127AD957700632869 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183A279F27AD957700632869 /* LaunchScreen.storyboard */; };
+		183A27B127AD96C100632869 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A27B027AD96C100632869 /* Constant.swift */; };
+		183A27B427AD977200632869 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A27B327AD977200632869 /* DesignSystem.swift */; };
+		183A27BD27AD97D600632869 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A27BC27AD97D600632869 /* NetworkClient.swift */; };
+		183A27C127AD985C00632869 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A27C027AD985C00632869 /* ApiRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		183A279127AD957600632869 /* IOS Task Trend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS Task Trend.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		183A279427AD957600632869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		183A279627AD957600632869 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		183A279827AD957600632869 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		183A279B27AD957600632869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		183A279D27AD957700632869 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183A27A027AD957700632869 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183A27A227AD957700632869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183A27B027AD96C100632869 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		183A27B327AD977200632869 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		183A27BC27AD97D600632869 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		183A27C027AD985C00632869 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,121 @@
 		183A279327AD957600632869 /* IOS Task Trend */ = {
 			isa = PBXGroup;
 			children = (
-				183A279427AD957600632869 /* AppDelegate.swift */,
-				183A279627AD957600632869 /* SceneDelegate.swift */,
-				183A279827AD957600632869 /* ViewController.swift */,
-				183A279A27AD957600632869 /* Main.storyboard */,
-				183A279D27AD957700632869 /* Assets.xcassets */,
-				183A279F27AD957700632869 /* LaunchScreen.storyboard */,
+				183A27C627AD991B00632869 /* AppDelegates */,
+				183A27C527AD98B000632869 /* SupportedFiles */,
+				183A27C427AD988200632869 /* LocalStorage */,
+				183A27B627AD977D00632869 /* Network */,
+				183A27AF27AD96AB00632869 /* Utilties */,
+				183A27AB27AD961C00632869 /* Module */,
+				183A27AA27AD960500632869 /* BaseClasses */,
+				183A27A927AD95F600632869 /* ViewModel */,
 				183A27A227AD957700632869 /* Info.plist */,
 			);
 			path = "IOS Task Trend";
+			sourceTree = "<group>";
+		};
+		183A27A927AD95F600632869 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		183A27AA27AD960500632869 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		183A27AB27AD961C00632869 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				183A27AE27AD963400632869 /* Favourite */,
+				183A27AD27AD962900632869 /* Search */,
+				183A27AC27AD962300632869 /* Home */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		183A27AC27AD962300632869 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		183A27AD27AD962900632869 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		183A27AE27AD963400632869 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		183A27AF27AD96AB00632869 /* Utilties */ = {
+			isa = PBXGroup;
+			children = (
+				183A27B027AD96C100632869 /* Constant.swift */,
+				183A27B327AD977200632869 /* DesignSystem.swift */,
+			);
+			path = Utilties;
+			sourceTree = "<group>";
+		};
+		183A27B627AD977D00632869 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				183A27BA27AD979A00632869 /* Routers */,
+				183A27BC27AD97D600632869 /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		183A27BA27AD979A00632869 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				183A27BF27AD983E00632869 /* BaseRouter */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		183A27BF27AD983E00632869 /* BaseRouter */ = {
+			isa = PBXGroup;
+			children = (
+				183A27C027AD985C00632869 /* ApiRouter.swift */,
+			);
+			path = BaseRouter;
+			sourceTree = "<group>";
+		};
+		183A27C427AD988200632869 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		183A27C527AD98B000632869 /* SupportedFiles */ = {
+			isa = PBXGroup;
+			children = (
+				183A279D27AD957700632869 /* Assets.xcassets */,
+				183A279F27AD957700632869 /* LaunchScreen.storyboard */,
+			);
+			path = SupportedFiles;
+			sourceTree = "<group>";
+		};
+		183A27C627AD991B00632869 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				183A279427AD957600632869 /* AppDelegate.swift */,
+				183A279627AD957600632869 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +236,6 @@
 			files = (
 				183A27A127AD957700632869 /* LaunchScreen.storyboard in Resources */,
 				183A279E27AD957700632869 /* Assets.xcassets in Resources */,
-				183A279C27AD957600632869 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +246,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183A279927AD957600632869 /* ViewController.swift in Sources */,
+				183A27B427AD977200632869 /* DesignSystem.swift in Sources */,
 				183A279527AD957600632869 /* AppDelegate.swift in Sources */,
 				183A279727AD957600632869 /* SceneDelegate.swift in Sources */,
+				183A27B127AD96C100632869 /* Constant.swift in Sources */,
+				183A27BD27AD97D600632869 /* NetworkClient.swift in Sources */,
+				183A27C127AD985C00632869 /* ApiRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		183A279A27AD957600632869 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				183A279B27AD957600632869 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		183A279F27AD957700632869 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
