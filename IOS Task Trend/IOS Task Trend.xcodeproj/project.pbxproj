@@ -15,6 +15,16 @@
 		183A27B427AD977200632869 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A27B327AD977200632869 /* DesignSystem.swift */; };
 		183A27BD27AD97D600632869 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A27BC27AD97D600632869 /* NetworkClient.swift */; };
 		183A27C127AD985C00632869 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183A27C027AD985C00632869 /* ApiRouter.swift */; };
+		18AD563A27AD9D7000BEDF7A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD563927AD9D7000BEDF7A /* TabBarController.swift */; };
+		18AD563F27AD9E1000BEDF7A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD563E27AD9E1000BEDF7A /* AppCoordinator.swift */; };
+		18AD564427AD9E3500BEDF7A /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD564327AD9E3500BEDF7A /* MainNavigator.swift */; };
+		18AD564727AD9ECC00BEDF7A /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD564627AD9ECC00BEDF7A /* Navigator.swift */; };
+		18AD564B27ADA48100BEDF7A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD564927ADA48100BEDF7A /* HomeVC.swift */; };
+		18AD564C27ADA48100BEDF7A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AD564A27ADA48100BEDF7A /* HomeVC.xib */; };
+		18AD565727ADA4C100BEDF7A /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD565527ADA4C100BEDF7A /* SearchVC.swift */; };
+		18AD565827ADA4C100BEDF7A /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AD565627ADA4C100BEDF7A /* SearchVC.xib */; };
+		18AD565C27ADA4FE00BEDF7A /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AD565A27ADA4FE00BEDF7A /* FavouriteVC.swift */; };
+		18AD565D27ADA4FE00BEDF7A /* FavouriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AD565B27ADA4FE00BEDF7A /* FavouriteVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +38,16 @@
 		183A27B327AD977200632869 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		183A27BC27AD97D600632869 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		183A27C027AD985C00632869 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		18AD563927AD9D7000BEDF7A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		18AD563E27AD9E1000BEDF7A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		18AD564327AD9E3500BEDF7A /* MainNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		18AD564627AD9ECC00BEDF7A /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		18AD564927ADA48100BEDF7A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		18AD564A27ADA48100BEDF7A /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		18AD565527ADA4C100BEDF7A /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		18AD565627ADA4C100BEDF7A /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
+		18AD565A27ADA4FE00BEDF7A /* FavouriteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
+		18AD565B27ADA4FE00BEDF7A /* FavouriteVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +110,7 @@
 		183A27AB27AD961C00632869 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				18AD563827AD9D4100BEDF7A /* TabBar */,
 				183A27AE27AD963400632869 /* Favourite */,
 				183A27AD27AD962900632869 /* Search */,
 				183A27AC27AD962300632869 /* Home */,
@@ -100,6 +121,8 @@
 		183A27AC27AD962300632869 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				18AD564927ADA48100BEDF7A /* HomeVC.swift */,
+				18AD564A27ADA48100BEDF7A /* HomeVC.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -107,6 +130,8 @@
 		183A27AD27AD962900632869 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				18AD565527ADA4C100BEDF7A /* SearchVC.swift */,
+				18AD565627ADA4C100BEDF7A /* SearchVC.xib */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -114,6 +139,8 @@
 		183A27AE27AD963400632869 /* Favourite */ = {
 			isa = PBXGroup;
 			children = (
+				18AD565A27ADA4FE00BEDF7A /* FavouriteVC.swift */,
+				18AD565B27ADA4FE00BEDF7A /* FavouriteVC.xib */,
 			);
 			path = Favourite;
 			sourceTree = "<group>";
@@ -121,6 +148,7 @@
 		183A27AF27AD96AB00632869 /* Utilties */ = {
 			isa = PBXGroup;
 			children = (
+				18AD563D27AD9DCA00BEDF7A /* Coordinator */,
 				183A27B027AD96C100632869 /* Constant.swift */,
 				183A27B327AD977200632869 /* DesignSystem.swift */,
 			);
@@ -175,6 +203,32 @@
 				183A279627AD957600632869 /* SceneDelegate.swift */,
 			);
 			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		18AD563827AD9D4100BEDF7A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				18AD563927AD9D7000BEDF7A /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		18AD563D27AD9DCA00BEDF7A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				18AD564627AD9ECC00BEDF7A /* Navigator.swift */,
+				18AD564227AD9E3500BEDF7A /* MainNavigator */,
+				18AD563E27AD9E1000BEDF7A /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		18AD564227AD9E3500BEDF7A /* MainNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				18AD564327AD9E3500BEDF7A /* MainNavigator.swift */,
+			);
+			path = MainNavigator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +288,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AD565827ADA4C100BEDF7A /* SearchVC.xib in Resources */,
 				183A27A127AD957700632869 /* LaunchScreen.storyboard in Resources */,
+				18AD564C27ADA48100BEDF7A /* HomeVC.xib in Resources */,
 				183A279E27AD957700632869 /* Assets.xcassets in Resources */,
+				18AD565D27ADA4FE00BEDF7A /* FavouriteVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,11 +303,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AD565727ADA4C100BEDF7A /* SearchVC.swift in Sources */,
 				183A27B427AD977200632869 /* DesignSystem.swift in Sources */,
+				18AD564727AD9ECC00BEDF7A /* Navigator.swift in Sources */,
 				183A279527AD957600632869 /* AppDelegate.swift in Sources */,
 				183A279727AD957600632869 /* SceneDelegate.swift in Sources */,
 				183A27B127AD96C100632869 /* Constant.swift in Sources */,
+				18AD564427AD9E3500BEDF7A /* MainNavigator.swift in Sources */,
+				18AD563F27AD9E1000BEDF7A /* AppCoordinator.swift in Sources */,
+				18AD563A27AD9D7000BEDF7A /* TabBarController.swift in Sources */,
+				18AD565C27ADA4FE00BEDF7A /* FavouriteVC.swift in Sources */,
 				183A27BD27AD97D600632869 /* NetworkClient.swift in Sources */,
+				18AD564B27ADA48100BEDF7A /* HomeVC.swift in Sources */,
 				183A27C127AD985C00632869 /* ApiRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

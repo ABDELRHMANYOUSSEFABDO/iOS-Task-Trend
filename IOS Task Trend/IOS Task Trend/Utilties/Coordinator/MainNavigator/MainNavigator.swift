@@ -31,13 +31,14 @@ class MainNavigator: Navigator{
         case .tabBar:
             return coordinator.tabBarController
         case .home:
-            break
+            return HomeVC()
+            
         case .favourite:
-            break
+            return FavouriteVC()
+            
         case .search:
-            break
+            return SearchVC()
         }
-        return .init()
     }
     
 }
