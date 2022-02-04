@@ -6,3 +6,7 @@
 //
 
 import Foundation
+class Constant{
+    static let baseUrl = "https://api.unsplash.com/"
+
+}
