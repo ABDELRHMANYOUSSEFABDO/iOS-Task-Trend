@@ -39,8 +39,8 @@ class MainNavigator: Navigator{
             return FavouriteVC()
             
         case .search(let query):
-            
-            return  SearchVC()
+            let searchViewModel = SearchViewModel(query: query)
+            return  SearchVC(viewModel: searchViewModel, coordinator: coordinator)
         
     }
     

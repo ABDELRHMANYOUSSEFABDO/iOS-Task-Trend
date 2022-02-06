@@ -108,7 +108,7 @@ extension HomeVC:UISearchBarDelegate{
             return
         }
         if !text.trimmingCharacters(in: .whitespaces).isEmpty {
-      //      coordinator.mainNavigator.navigate(to: .search(query: text))
+         coordinator.mainNavigator.navigate(to: .search(query: text))
         }
     }
 }
