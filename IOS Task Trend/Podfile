@@ -8,4 +8,5 @@ target 'IOS Task Trend' do
   # Pods for IOS Task Trend
  pod 'SDWebImage'
   pod 'Alamofire'
+  pod 'RealmSwift'
 end
