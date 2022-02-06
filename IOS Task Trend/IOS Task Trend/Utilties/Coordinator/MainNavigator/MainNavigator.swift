@@ -18,7 +18,8 @@ class MainNavigator: Navigator{
         case home
         case search(query:String)
         case favourite
-        
+        case zoomImage(imageUrl:String)
+
        
         
     }
@@ -42,8 +43,12 @@ class MainNavigator: Navigator{
         case .search(let query):
             let searchViewModel = SearchViewModel(query: query)
             return  SearchVC(viewModel: searchViewModel, coordinator: coordinator)
-        
-    }
+        case .zoomImage(let imageUrl):
+            let zoomController = ImageZoomedViewController()
+         
+            zoomController.imageURL = imageUrl
+            return zoomController
+        }
     
 }
 }

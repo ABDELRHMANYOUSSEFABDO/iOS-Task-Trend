@@ -21,8 +21,8 @@ class HomeVC: BaseViewController<HomeViewModel> {
     }()
     
     lazy var dataSource :ImageDataSource = {
-        let d = ImageDataSource(favBehaviour: self)
-        return d
+        let data = ImageDataSource(favBehaviour: self)
+        return data
     }()
 
     override func viewDidLoad() {
@@ -89,7 +89,7 @@ class HomeVC: BaseViewController<HomeViewModel> {
 }
 extension HomeVC:FavouriteActionDelegate,ZoomImageButtonDelegate{
     func zoomImageButtonIsPressed(imageURL: String) {
-      //  coordinator.mainNavigator.navigate(to:.zoomImage(imageUrl: imageURL))
+       coordinator.mainNavigator.navigate(to:.zoomImage(imageUrl: imageURL))
     }
     
     func addFav(fav: Favourites) {
