@@ -45,6 +45,8 @@
 		18B4492327AFBE8D002C23EB /* FavouriteVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4491F27AFBE8D002C23EB /* FavouriteVC.xib */; };
 		18B4492427AFBE8D002C23EB /* FavouriteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4492027AFBE8D002C23EB /* FavouriteVC.swift */; };
 		18B4492527AFBE8D002C23EB /* FavouitesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4492127AFBE8D002C23EB /* FavouitesDataSource.swift */; };
+		18B4492C27AFC4BA002C23EB /* ImageZoomedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B4492A27AFC4BA002C23EB /* ImageZoomedViewController.swift */; };
+		18B4492D27AFC4BA002C23EB /* ImageZoomedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B4492B27AFC4BA002C23EB /* ImageZoomedViewController.xib */; };
 		31E6AB1CCF09E5B72C3E7D13 /* Pods_IOS_Task_Trend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777C4FBFD7F31B92BB67EFEB /* Pods_IOS_Task_Trend.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		18B4491F27AFBE8D002C23EB /* FavouriteVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouriteVC.xib; sourceTree = "<group>"; };
 		18B4492027AFBE8D002C23EB /* FavouriteVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouriteVC.swift; sourceTree = "<group>"; };
 		18B4492127AFBE8D002C23EB /* FavouitesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouitesDataSource.swift; sourceTree = "<group>"; };
+		18B4492A27AFC4BA002C23EB /* ImageZoomedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageZoomedViewController.swift; sourceTree = "<group>"; };
+		18B4492B27AFC4BA002C23EB /* ImageZoomedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageZoomedViewController.xib; sourceTree = "<group>"; };
 		1B029991E466CB5312ABD122 /* Pods-IOS Task Trend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task Trend.debug.xcconfig"; path = "Target Support Files/Pods-IOS Task Trend/Pods-IOS Task Trend.debug.xcconfig"; sourceTree = "<group>"; };
 		5723136978EABF32E56499BA /* Pods-IOS Task Trend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS Task Trend.release.xcconfig"; path = "Target Support Files/Pods-IOS Task Trend/Pods-IOS Task Trend.release.xcconfig"; sourceTree = "<group>"; };
 		777C4FBFD7F31B92BB67EFEB /* Pods_IOS_Task_Trend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_Task_Trend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,22 +138,15 @@
 				183A27B627AD977D00632869 /* Network */,
 				183A27AF27AD96AB00632869 /* Utilties */,
 				183A27AB27AD961C00632869 /* Module */,
-				183A27A927AD95F600632869 /* ViewModel */,
 				183A27A227AD957700632869 /* Info.plist */,
 			);
 			path = "IOS Task Trend";
 			sourceTree = "<group>";
 		};
-		183A27A927AD95F600632869 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		183A27AB27AD961C00632869 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				18B4492827AFC4BA002C23EB /* Image Zoomed */,
 				18B4491C27AFBE8D002C23EB /* Favourite */,
 				18B4490F27AFBC86002C23EB /* Search */,
 				18AD563827AD9D4100BEDF7A /* TabBar */,
@@ -395,6 +392,23 @@
 			path = Viewmodel;
 			sourceTree = "<group>";
 		};
+		18B4492827AFC4BA002C23EB /* Image Zoomed */ = {
+			isa = PBXGroup;
+			children = (
+				18B4492927AFC4BA002C23EB /* ViewController */,
+			);
+			path = "Image Zoomed";
+			sourceTree = "<group>";
+		};
+		18B4492927AFC4BA002C23EB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18B4492A27AFC4BA002C23EB /* ImageZoomedViewController.swift */,
+				18B4492B27AFC4BA002C23EB /* ImageZoomedViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		69A1F82269626DCD63EB65DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,6 +489,7 @@
 				18AD566427ADAD4D00BEDF7A /* Colors.xcassets in Resources */,
 				183A279E27AD957700632869 /* Assets.xcassets in Resources */,
 				18B4491727AFBC86002C23EB /* SearchVC.xib in Resources */,
+				18B4492D27AFC4BA002C23EB /* ImageZoomedViewController.xib in Resources */,
 				18AD566527ADAD4D00BEDF7A /* ColorSystem.png in Resources */,
 				18B448ED27AFBA03002C23EB /* ImageCollectionViewCell.xib in Resources */,
 				18B4492327AFBE8D002C23EB /* FavouriteVC.xib in Resources */,
@@ -538,6 +553,7 @@
 				18B448D827AFB962002C23EB /* Favourites.swift in Sources */,
 				18B448D927AFB962002C23EB /* DatabaseManager.swift in Sources */,
 				18B448FC27AFBA3F002C23EB /* BaseViewModel.swift in Sources */,
+				18B4492C27AFC4BA002C23EB /* ImageZoomedViewController.swift in Sources */,
 				18B448EE27AFBA03002C23EB /* ImageCollectionViewCell.swift in Sources */,
 				18B4492227AFBE8D002C23EB /* FavouriteViewModel.swift in Sources */,
 				18AD566E27ADB59B00BEDF7A /* UnSplashRouter.swift in Sources */,
