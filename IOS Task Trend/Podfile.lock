@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.5.0)
+  - PKHUD (5.3.0)
   - Realm (10.21.1):
     - Realm/Headers (= 10.21.1)
   - Realm/Headers (10.21.1)
@@ -8,25 +9,32 @@ PODS:
   - SDWebImage (5.12.2):
     - SDWebImage/Core (= 5.12.2)
   - SDWebImage/Core (5.12.2)
+  - Toast-Swift (4.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - PKHUD (~> 5.0)
   - RealmSwift
   - SDWebImage
+  - Toast-Swift (~> 4.0.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - PKHUD
     - Realm
     - RealmSwift
     - SDWebImage
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
   Realm: 44b41c3ae39e3ecfded71a04434bfde066c7b317
   RealmSwift: dbf9a4eb06e0c929d51c4ef2e8f951bca541feab
   SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
 
-PODFILE CHECKSUM: 828c4adebd58c2930ebe4e3d82e5119bb212101c
+PODFILE CHECKSUM: 3aa2aedafdf647964a8ebf0f04d4482350c80fb3
 
 COCOAPODS: 1.11.2

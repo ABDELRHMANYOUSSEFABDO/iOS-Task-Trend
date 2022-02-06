@@ -10,8 +10,8 @@ import Alamofire
 enum UnSplash:APIRouter{
    
     
-    case homeImages(page:Int)
-    case searchImages(query:String,page:Int)
+    case homeImages
+    case searchImages(query:String)
     //MARK:HTTPMethods:
     var method: HTTPMethod{
         switch self{
@@ -36,14 +36,13 @@ enum UnSplash:APIRouter{
     //MARK:Parameters:
     var parameters: Parameters?{
         switch self {
-        case let .homeImages(page:page):
-            return ["client_id":"1d18Uk1t7HtUvnUoRBHMXgIN_YO60XepjRfTdeyJbt4",
-                    "page":page
+        case  .homeImages:
+            return ["client_id":"1d18Uk1t7HtUvnUoRBHMXgIN_YO60XepjRfTdeyJbt4"
+                    
             ]
             
-        case let .searchImages(query:query,page:page):
+        case let .searchImages(query:query):
             return ["query":query,
-                    "page":page,
                     "client_id":"1d18Uk1t7HtUvnUoRBHMXgIN_YO60XepjRfTdeyJbt4"
             ]
         }

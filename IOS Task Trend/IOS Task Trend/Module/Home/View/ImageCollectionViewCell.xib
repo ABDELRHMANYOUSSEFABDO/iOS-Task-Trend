@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ImageCollectionViewCell" customModule="IOS_Task_Trend" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="122"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sfq-Da-q9e">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="122"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBa-E4-SeV">
+                        <rect key="frame" x="5" y="117" width="113" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIU-eN-x35">
+                        <rect key="frame" x="85" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Q3R-1X-5Pn"/>
+                            <constraint firstAttribute="width" constant="25" id="Ur3-0T-eka"/>
+                        </constraints>
+                        <state key="normal" image="unfavourite"/>
+                        <connections>
+                            <action selector="favActionPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Wci-uX-geS"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="sfq-Da-q9e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0ix-ny-w7p"/>
+                <constraint firstAttribute="trailing" secondItem="pIU-eN-x35" secondAttribute="trailing" constant="10" id="1XF-TY-q1A"/>
+                <constraint firstItem="sfq-Da-q9e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8sJ-iZ-tjO"/>
+                <constraint firstItem="fBa-E4-SeV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="EN3-jq-aoC"/>
+                <constraint firstAttribute="bottom" secondItem="fBa-E4-SeV" secondAttribute="bottom" constant="5" id="G5z-T5-7ys"/>
+                <constraint firstItem="pIU-eN-x35" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="haJ-Lo-Iga"/>
+                <constraint firstAttribute="trailing" secondItem="fBa-E4-SeV" secondAttribute="trailing" constant="2" id="t1D-iH-Ymo"/>
+                <constraint firstAttribute="bottom" secondItem="sfq-Da-q9e" secondAttribute="bottom" id="vpd-Sw-pDE"/>
+                <constraint firstAttribute="trailing" secondItem="sfq-Da-q9e" secondAttribute="trailing" id="wHF-hd-aat"/>
+            </constraints>
+            <size key="customSize" width="120" height="122"/>
+            <connections>
+                <outlet property="addFavButton" destination="pIU-eN-x35" id="uNa-F2-LhL"/>
+                <outlet property="image" destination="sfq-Da-q9e" id="k72-mL-pbq"/>
+                <outlet property="nameImage" destination="fBa-E4-SeV" id="Fzz-jl-3lT"/>
+            </connections>
+            <point key="canvasLocation" x="-305.79710144927537" y="116.51785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="unfavourite" width="49" height="49"/>
+    </resources>
+</document>

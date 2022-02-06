@@ -16,8 +16,9 @@ class MainNavigator: Navigator{
         //MARK:- General
         case tabBar
         case home
-        case search
+        case search(query:String)
         case favourite
+        
        
         
     }
@@ -31,14 +32,17 @@ class MainNavigator: Navigator{
         case .tabBar:
             return coordinator.tabBarController
         case .home:
-            return HomeVC()
-            
+            let homeViewModel = HomeViewModel()
+            let homeVC = HomeVC(viewModel: homeViewModel, coordinator: self.coordinator)
+                return homeVC
         case .favourite:
             return FavouriteVC()
             
-        case .search:
-            return SearchVC()
-        }
+        case .search(let query):
+            
+            return  SearchVC()
+        
     }
     
+}
 }
