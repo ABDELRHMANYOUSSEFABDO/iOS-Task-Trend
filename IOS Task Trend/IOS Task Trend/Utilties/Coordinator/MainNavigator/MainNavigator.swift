@@ -36,7 +36,8 @@ class MainNavigator: Navigator{
             let homeVC = HomeVC(viewModel: homeViewModel, coordinator: self.coordinator)
                 return homeVC
         case .favourite:
-            return FavouriteVC()
+            let favViewModel = FavouriteViewModel()
+            return FavouriteVC(viewModel: favViewModel, coordinator: coordinator)
             
         case .search(let query):
             let searchViewModel = SearchViewModel(query: query)
