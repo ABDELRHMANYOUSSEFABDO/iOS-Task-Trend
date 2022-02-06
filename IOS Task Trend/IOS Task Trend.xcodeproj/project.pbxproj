@@ -371,16 +371,8 @@
 			children = (
 				18B4499127B0120A002C23EB /* Error Handling */,
 				18B4498B27B011F6002C23EB /* BaseClasses */,
-				18B4498A27B011E1002C23EB /* New Group */,
 			);
 			path = Cores;
-			sourceTree = "<group>";
-		};
-		18B4498A27B011E1002C23EB /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		18B4498B27B011F6002C23EB /* BaseClasses */ = {
