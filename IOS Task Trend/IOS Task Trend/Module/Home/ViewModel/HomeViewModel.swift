@@ -23,7 +23,7 @@ class HomeViewModel : BaseViewModel {
     var reloadCollectionViewClosure: (()->())?
     func fetchPendingImage(){
         self.loadingState = .loading
-        NetworkClient.shared.createRequest(router: UnSplash.homeImages as! APIRouter, with: [ImageElement].self) { (data) in
+        NetworkClient.shared.createRequest(router: UnSplash.homeImages, with: [ImageElement].self) { (data) in
             self.loadingState = .populated
             self.ImageElementCellViewModels = data ?? []
         } returnError: { (error) in

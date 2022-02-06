@@ -1,9 +1,8 @@
 //
-//  CustomCollectionViewLayout.swift
-//  CollectionLayout
+//  ImageDataSource.swift
+//  IOS Task Trend
 //
-//  Created by Benoit PASQUIER on 25/04/2018.
-//  Copyright © 2018 Benoit PASQUIER. All rights reserved.
+//  Created by Apple on 2/5/22.
 //
 
 import Foundation
